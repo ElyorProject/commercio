@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercio - Маркетплейс Нового Поколения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Commercio" class="cmlogo">
+            </div>
+            <nav class="nav">
+                <a href="#about" class="active" data-translate="nav.about">О нас</a>
+                <a href="#features" data-translate="nav.features">Возможности</a>
+                <a href="price/price.html" target="_blank" data-translate="nav.pricing">Тарифы</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">
+                        <span class="flag">🇷🇺</span>
+                        
+                    </button>
+                    <button class="lang-btn" data-lang="uz">
+                        <span class="flag">🇺🇿</span>
+                        
+                    </button>
+                </div>
+                <a href="https://t.me/commerciotrade_bot" class="btn-cta" target="_blank">
+                    <i class="fas fa-rocket"></i>
+                    <span data-translate="cta.start">Начать бесплатно</span>
+                </a>
+            </nav>
+            
+            <!-- Mobile header elements -->
+            <div class="mobile-header">
+                <div class="mobile-lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">
+                        
+                    </button>
+                    <button class="lang-btn" data-lang="uz">
+                        
+                    </button>
+                </div>
+                <div class="mobile-brand">
+                    <span class="brand-text">COMMERCIO</span>
+                </div>
+                     
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span data-translate="nav.home">Главная</span>
+        </a>
+        <a href="#features" class="nav-item">
+            <i class="fas fa-star"></i>
+            <span data-translate="nav.features">Функции</span>
+        </a>
+        <a href="price/price.html" class="nav-item" target="_blank">
+            <i class="fas fa-tags"></i>
+            <span data-translate="nav.pricing">Тарифы</span>
+        </a>
+        <a href="https://t.me/commerciotrade_bot" class="nav-item cta-nav" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+            <span data-translate="nav.start">Начать</span>
+        </a>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span data-translate="hero.badge">Новое поколение маркетплейсов</span>
+                    </div>
+                    
+                    <h1>
+                        <span class="gradient-text">COMMERCIO</span><br>
+                        <span class="hero-subtitle" data-translate="hero.subtitle">Где малый бизнес <span class="highlight">побеждает</span> крупный</span>
+                    </h1>
+                    
+                    <p class="subtitle" data-translate="hero.description">
+                        Революционная платформа для предпринимателей, которые устали от несправедливых условий больших площадок
+                    </p>
+                    
+
+                    
+                    <div class="cta-buttons">
+                        <a href="https://t.me/commerciotrade_bot" class="btn-main" target="_blank">
+                            <i class="fas fa-rocket"></i>
+                            <span data-translate="hero.btn.start">Начать бесплатно</span>
+                        </a>
+                        <a href="#features" class="btn-secondary">
+                            <i class="fas fa-play"></i>
+                            <span data-translate="hero.btn.learn">Узнать больше</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">0%</div>
+                            <div class="stat-label" data-translate="hero.stat.commission">Комиссия с продаж</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">FREE</div>
+                            <div class="stat-label" data-translate="hero.stat.month">Первый месяц</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label" data-translate="hero.stat.support">AI-поддержка</div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="hero-visual">
+                    <div class="problem-solution">
+                        <div class="problem">
+                            <div class="icon-wrapper problem-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div data-translate="hero.problem">
+                                <strong>Проблема:</strong> Высокие комиссии и жесткая конкуренция с гигантами
+                            </div>
+                        </div>
+                        <div class="solution">
+                            <div class="icon-wrapper solution-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div data-translate="hero.solution">
+                                <strong>Решение:</strong> Отдельный рынок БЕЗ гигантов с честными условиями
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-translate="hero.card1">+150% продаж</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-users"></i>
+                                <span data-translate="hero.card2">1000+ клиентов</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span data-translate="hero.card3">Без комиссий</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="features.title">Почему выбирают Commercio?</h2>
+                    <p class="section-subtitle" data-translate="features.subtitle">Все инструменты для успешного бизнеса в одном месте</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card featured">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 data-translate="features.ai.title">AI-помощник</h3>
+                        <p data-translate="features.ai.desc">Искусственный интеллект создает продающие описания, дизайны и дает персональные советы</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.ai.item1">Автоматические описания товаров</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.ai.item2">Генерация изображений</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.ai.item3">Аналитика и рекомендации</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <h3 data-translate="features.telegram.title">Интеграция с Telegram</h3>
+                        <p data-translate="features.telegram.desc">Ваши клиенты уже в Telegram - продавайте там, где они есть</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.telegram.item1">Автоматическое оформление заказов</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.telegram.item2">Встроенные чаты с покупателями</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.telegram.item3">Уведомления в реальном времени</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3 data-translate="features.pricing.title">Честные условия</h3>
+                        <p data-translate="features.pricing.desc">Фиксированная плата без скрытых комиссий - вся прибыль остается у вас</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.pricing.item1">От $10 в месяц</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.pricing.item2">0% комиссии с продаж</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.pricing.item3">Первый месяц бесплатно</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-store-alt"></i>
+                        </div>
+                        <h3 data-translate="features.niches.title">Уникальные ниши</h3>
+                        <p data-translate="features.niches.desc">Специализированные категории для особых потребностей клиентов</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.niches.item1">Халяль продукты</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.niches.item2">Ручная работа</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.niches.item3">Подписки на свежие продукты</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 data-translate="features.eco.title">Эко-товары</h3>
+                        <p data-translate="features.eco.desc">Продукция без вреда для природы</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.eco.item1">Экологически чистые материалы</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.eco.item2">Биоразлагаемая упаковка</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.eco.item3">Сертификация качества</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 data-translate="features.collectibles.title">Редкие коллекционные вещи</h3>
+                        <p data-translate="features.collectibles.desc">Для ценителей и коллекционеров</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.collectibles.item1">Антиквариат и винтаж</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.collectibles.item2">Ограниченные серии</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="features.collectibles.item3">Сертификаты подлинности</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="testimonials.title">Что говорят о концепции Commercio</h2>
+                    <p class="section-subtitle" data-translate="testimonials.subtitle">Мнения экспертов и предпринимателей о нашей платформе</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p data-translate="testimonials.quote1">"AI-помощник экономит мне 5 часов в день. Описания товаров стали намного лучше!"</p>
+                        </div>
+                        <div class="testimonial-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <span class="metric-value">-5 часов</span>
+                                    <span class="metric-label" data-translate="testimonials.metric1">экономии в день</span>
+                                </div>
+                            </div>
+                            <div class="business-badge electronics">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span data-translate="testimonials.badge1">Электроника</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p data-translate="testimonials.quote2">"Продажи выросли на 150% за первый месяц. Клиенты находят меня намного легче!"</p>
+                        </div>
+                        <div class="testimonial-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <span class="metric-value">+150%</span>
+                                    <span class="metric-label" data-translate="testimonials.metric2">рост продаж</span>
+                                </div>
+                            </div>
+                            <div class="business-badge fashion">
+                                <i class="fas fa-tshirt"></i>
+                                <span data-translate="testimonials.badge2">Одежда</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p data-translate="testimonials.quote3">"Наконец-то площадка, где малый бизнес может конкурировать на равных!"</p>
+                        </div>
+                        <div class="testimonial-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <span class="metric-value">0%</span>
+                                    <span class="metric-label" data-translate="testimonials.metric3">комиссии</span>
+                                </div>
+                            </div>
+                            <div class="business-badge halal">
+                                <i class="fas fa-leaf"></i>
+                                <span data-translate="testimonials.badge3">Халяль продукты</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="special-offer" class="offer-section">
+            <div class="container">
+                <div class="offer-header">
+                    <div class="offer-badge">
+                        <i class="fas fa-gift"></i>
+                        <span data-translate="offer.badge">Эксклюзивное предложение</span>
+                    </div>
+                    <h2 data-translate="offer.title">Получите FREE доступ на месяц</h2>
+                    <p class="offer-subtitle" data-translate="offer.subtitle">Всего 3 простых шага до полного бесплатного доступа</p>
+                    <div class="slots-counter">
+                        <div class="slots-info">
+                            <span class="slots-text" data-translate="offer.slots">Осталось мест:</span>
+                            <span class="slots-number" id="slots-count">22</span>
+                            <span class="slots-total" data-translate="offer.slots.of">из 100</span>
+                        </div>
+                        <div class="slots-bar">
+                            <div class="slots-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offer-steps">
+                    <div class="offer-step">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3 data-translate="offer.step1.title">Создайте магазин</h3>
+                            <p data-translate="offer.step1.desc">В боте зарегистрируйте магазин, и отправьте заявку</p>
+                        </div>
+                        <div class="step-number">01</div>
+                    </div>
+                    
+                    <div class="offer-step">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3 data-translate="offer.step2.title">Активно используйте</h3>
+                            <p data-translate="offer.step2.desc">Используйте все возможности платформы месяц</p>
+                        </div>
+                        <div class="step-number">02</div>
+                    </div>
+                    
+                    <div class="offer-step">
+                        <div class="step-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3 data-translate="offer.step3.title">Поделитесь опытом</h3>
+                            <p data-translate="offer.step3.desc">Оставьте отзыв, и напишите что нужно именно вам</p>
+                        </div>
+                        <div class="step-number">03</div>
+                    </div>
+                </div>
+                
+                <div class="offer-cta">
+                    <div class="offer-bonus">
+                        <div class="bonus-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span data-translate="offer.bonus1">Экономия для дальнейшего развития</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-infinity"></i>
+                            <span data-translate="offer.bonus2">Без ограничений</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="offer.bonus3">Полная поддержка</span>
+                        </div>
+                    </div>
+                    <a href="https://t.me/commerciotrade_bot" class="btn-main mega-btn" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span data-translate="offer.btn">Получить FREE доступ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-cta">
+            <div class="container">
+                <div class="footer-content">
+                    <h2 data-translate="footer.title">Готовы начать?</h2>
+                    <p class="footer-tagline" data-translate="footer.subtitle">Присоединяйтесь  к  сообществу  успешных  предпринимателей  уже  сегодня</p>
+                    <a href="https://t.me/commerciotrade_bot" class="btn-main large-btn" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span data-translate="footer.btn">Начать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Commercio" class="footer-logo">
+                    <p data-translate="footer.brand.desc">Маркетплейс нового поколения для предпринимателей</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.product">Продукт</h4>
+                    <a href="#features" data-translate="footer.features">Возможности</a>
+                    <a href="price/price.html" data-translate="footer.pricing">Тарифы</a>
+                    <a href="#" data-translate="footer.api">API</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.support">Поддержка</h4>
+                    <a href="#" data-translate="footer.help">Помощь</a>
+                    <a href="#" data-translate="footer.docs">Документация</a>
+                    <a href="#" data-translate="footer.contacts">Контакты</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.connect">Связь</h4>
+                    <a href="https://t.me/commerciotrade_bot" target="_blank">
+                        <span data-translate="footer.telegram">📱 Telegram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Commercio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Анимация счетчика мест
+        function animateCounter() {
+            const counter = document.getElementById('slots-count');
+            const target = 22;
+            let current = target + 8;
+            
+            const timer = setInterval(() => {
+                if (current > target) {
+                    current--;
+                    counter.textContent = current;
+                } else {
+                    clearInterval(timer);
+                }
+            }, 150);
+        }
+
+        // Плавная прокрутка для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Запуск анимаций при загрузке
+        window.addEventListener('load', () => {
+            setTimeout(animateCounter, 1000);
+        });
+
+        // Мобильные языковые кнопки
+        setTimeout(() => {
+            const mobileLangButtons = document.querySelectorAll('.mobile-lang-switcher .lang-btn');
+            
+            mobileLangButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const selectedLang = btn.dataset.lang;
+                    
+                    // Обновляем все кнопки языка (основные и мобильные)
+                    document.querySelectorAll('.lang-btn').forEach(b => {
+                        if (b.dataset.lang === selectedLang) {
+                            b.classList.add('active');
+                        } else {
+                            b.classList.remove('active');
+                        }
+                    });
+                    
+                    translatePage(selectedLang);
+                });
+            });
+        }, 100);
+
+        // Переводы загружены из translations.js
+
+        // Переключатель языка
+        const langButtons = document.querySelectorAll('.nav .lang-btn');
+        
+        function translatePage(lang) {
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+        
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const selectedLang = btn.dataset.lang;
+                
+                // Обновляем все кнопки языка
+                document.querySelectorAll('.lang-btn').forEach(b => {
+                    if (b.dataset.lang === selectedLang) {
+                        b.classList.add('active');
+                    } else {
+                        b.classList.remove('active');
+                    }
+                });
+                
+                translatePage(selectedLang);
+            });
+        });
+
+
+    </script>
+</body>
+</html>
