@@ -797,11 +797,9 @@
         <div class="lang-switcher">
             <button class="lang-btn active" data-lang="ru" onclick="switchLang('ru')">
                 <span class="flag">🇷🇺</span>
-                
             </button>
             <button class="lang-btn" data-lang="uz" onclick="switchLang('uz')">
                 <span class="flag">🇺🇿</span>
-              
             </button>
         </div>
         <h1 data-translate="price.title">🚀 Построй империю с нуля</h1>
@@ -862,7 +860,8 @@
                 <div class="price-value yearly-price" style="display: none;">
                     <span class="original-price">$120</span>$96
                 </div>
-                <div class="price-period">/ месяц</div>
+                <div class="price-period monthly-period">/ месяц</div>
+                <div class="price-period yearly-period" style="display: none;">/ год</div>
             </div>
             <ul class="features-list">
                 <li class="feature-item">
@@ -901,7 +900,8 @@
                 <div class="price-value yearly-price" style="display: none;">
                     <span class="original-price">$355</span>$444
                 </div>
-                <div class="price-period">/ месяц</div>
+                <div class="price-period monthly-period">/ месяц</div>
+                <div class="price-period yearly-period" style="display: none;">/ год</div>
             </div>
             <ul class="features-list">
                 <li class="feature-item">
@@ -940,7 +940,8 @@
                 <div class="price-value yearly-price" style="display: none;">
                     <span class="original-price">$720</span>$576
                 </div>
-                <div class="price-period">/ месяц</div>
+                <div class="price-period monthly-period">/ месяц</div>
+                <div class="price-period yearly-period" style="display: none;">/ год</div>
             </div>
             <ul class="features-list">
                 <li class="feature-item">
@@ -1009,6 +1010,8 @@
         const toggleOptions = document.querySelectorAll('.toggle-option');
         const monthlyPrices = document.querySelectorAll('.monthly-price');
         const yearlyPrices = document.querySelectorAll('.yearly-price');
+        const monthlyPeriods = document.querySelectorAll('.monthly-period');
+        const yearlyPeriods = document.querySelectorAll('.yearly-period');
 
         toggleOptions.forEach(option => {
             option.addEventListener('click', () => {
@@ -1024,6 +1027,8 @@
                 if (option.dataset.period === 'yearly') {
                     monthlyPrices.forEach(price => price.style.display = 'none');
                     yearlyPrices.forEach(price => price.style.display = 'block');
+                    monthlyPeriods.forEach(period => period.style.display = 'none');
+                    yearlyPeriods.forEach(period => period.style.display = 'block');
                     // Hide FREE card for yearly pricing
                     if (freeCard) {
                         freeCard.style.display = 'none';
@@ -1040,6 +1045,8 @@
                 } else {
                     monthlyPrices.forEach(price => price.style.display = 'block');
                     yearlyPrices.forEach(price => price.style.display = 'none');
+                    monthlyPeriods.forEach(period => period.style.display = 'block');
+                    yearlyPeriods.forEach(period => period.style.display = 'none');
                     // Show FREE card for monthly pricing
                     if (freeCard) {
                         freeCard.style.display = 'block';
